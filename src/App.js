@@ -1,5 +1,4 @@
 import './App.css';
-import Upvote from './Components/Button/Button';
 import PostFeed from './Components/PostFeed/PostFeed';
 
 function App() {
