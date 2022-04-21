@@ -1,0 +1,8 @@
+.postfeed-container {
+	display: flex;
+	align-items: center;
+}
+
+.postslist {
+	list-style: none;
+}
