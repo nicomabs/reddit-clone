@@ -2,17 +2,20 @@ import React, { useState } from 'react';
 import Upvote from '../Button/Button';
 import './Post.css';
 
-export default function Post() {
-	const topic = '/E loremakjsbdekcsbdckbsdc';
-	const subject = 'qsdcbm<kbsibcuerbcekbrcsldicbqsobcquidcqsbdpuciqsbvpzievc';
-
+export default function Post({
+	title,
+	description,
+	votes,
+	increment,
+	decrement,
+}) {
 	return (
 		<div className="post-container">
 			<article>
-				<h3>{topic}</h3>
-				<p>{subject}</p>
+				<h3>{title}</h3>
+				<p>{description}</p>
 			</article>
-			<Upvote />
+			<Upvote votes={votes} increment={increment} decrement={decrement} />
 		</div>
 	);
 }
